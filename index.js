@@ -90,7 +90,7 @@ class BouncingPoint {
     }
 }
 
-const N_POINTS = 2;
+const N_POINTS = 3;
 const points = Array.from({length: N_POINTS}, () => new BouncingPoint());
 
 function getSpectralColor(t) {
@@ -116,7 +116,7 @@ function getSpectralColor(t) {
 }
 
 function drawVectorField() {
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
     const spacing = 15;
